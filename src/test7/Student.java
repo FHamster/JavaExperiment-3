@@ -4,10 +4,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
-class Student implements Comparable<Student>
+class Student
 {
     private String name;
     private int math;
@@ -94,7 +93,7 @@ class Student implements Comparable<Student>
         return ds;
     }
 
-    public double getAvg()
+    public int getAvg()
     {
         return avg;
     }
@@ -123,7 +122,7 @@ class Student implements Comparable<Student>
     }
 
     //重写比较器
-    @Override
+  /*  @Override
     public int compareTo(Student o)
     {
         if (this.avg < o.avg)
@@ -136,7 +135,7 @@ class Student implements Comparable<Student>
         return 0;
     }
 
-
+*/
     public static Student[] readStudentsFromFile()
     {
         File FileIO = new File("src/test7/Students.txt");
@@ -197,12 +196,13 @@ class Student implements Comparable<Student>
     }
 
     //排序学生并输出
-    public static void sortAndOut(Student[] students)
+ /*   public static void sortAndOut(Student[] students)
     {
         Arrays.sort(students);
+
         for (Student x : students)
         {
             System.out.println(x);
         }
-    }
+    }*/
 }

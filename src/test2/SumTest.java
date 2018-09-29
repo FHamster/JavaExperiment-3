@@ -6,6 +6,6 @@ public class SumTest
     {
         Sum sum = new Sum();
         System.out.println(sum.getSum(1, 100));
-        System.out.println("static:"+Sum.static_getSum(1, 100));
+        System.out.println("static:" + Sum.static_getSum(1, 100));
     }
 }

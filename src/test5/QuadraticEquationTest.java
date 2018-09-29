@@ -6,10 +6,10 @@ public class QuadraticEquationTest
 {
     public static void main(String[] args)
     {
-        for (int i = 0;i<3;i++)
+        for (int i = 0; i < 3; i++)
         {
             Scanner scanner = new Scanner(System.in);
-            System.out.println("输入二次方程的a，b，c" );
+            System.out.println("输入二次方程的a，b，c");
             int a = scanner.nextInt();
             int b = scanner.nextInt();
             int c = scanner.nextInt();
@@ -22,7 +22,7 @@ public class QuadraticEquationTest
 
             } else if (Q.getDiscriminant() < 0)
             {
-                System.out.println("The equation has no roots." );
+                System.out.println("The equation has no roots.");
             } else
             {
                 System.out.println(Q.getRoot1());
